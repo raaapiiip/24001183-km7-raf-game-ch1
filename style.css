@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section .btn-register {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;  
+    background-color: #5CB85F;
+    color: #FFFFFF;
+    width: 81px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    gap: 10px;
+}
+
+section .btn-rent {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;  
+    background-color: #5CB85F;
+    color: #FFFFFF;
+    width: 140px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    gap: 10px;
+}
+
+.main-bg {
+    background-color: #F1F3FF;
+}
+
+.h1-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.h2-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.content-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.img-flex {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000000;
+}
