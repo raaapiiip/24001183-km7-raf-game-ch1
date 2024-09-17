@@ -1,67 +1,157 @@
+/* VARIABLES */
+:root {
+    --light-primary-color: #FFFFFF;
+    --light-secondary-color: #F1F3FF;
+    --dark-color: #000000;
+    --blue-color: #0D28A6;
+    --green-color: #5CB85F;
+
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+}
+
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
-    border: none;
     box-sizing: border-box;
     font-family: "Helvetica";
-    list-style: none;
-    outline: none;
     text-decoration: none;
+}
+img {
+    max-width: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
+/* GLOBAL CSS */
 section {
-    padding-top: 10rem;
-}
-
-.nav-link {
-    padding-top: 0px;
-    margin-right: 30px;
-}
-
-.main-menu {
-    position: relative;
-    height: 404px;
-    align-items: center;
-}
-
-header .btn-register {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;  
-    background-color: #5CB85F;
-    color: #FFFFFF;
-    width: 81px;
-    height: 36px;
-    border-radius: 2px;
-    border: none;
-    gap: 10px;
-}
-
-.container {
-    margin: 0;
+    padding-top: 100px;
 }
 
 li {
     margin: 15px;
 }
 
-section .btn-rent {
+.container {
+    margin: 0;
+}
+
+.text-black {
+    color: var(--dark-color);
+}
+
+.text-white {
+    color: var(--light-primary-color);
+}
+
+.fs-36 {
+    font-size: var(--font-size-36);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;  
-    background-color: #5CB85F;
-    color: #FFFFFF;
-    width: 140px;
-    height: 36px;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+.fs-24 {
+    font-size: var(--font-size-24);
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.fs-16 {
+    font-size: var(--font-size-16);
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.fs-14 {
+    font-size: var(--font-size-14);
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.light-secondary-bg {
+    background-color: var(--light-secondary-color);
+}
+
+.blue-bg {
+    background-color: var(--blue-color);
+}
+
+.btn-green {
+    background-color: var(--green-color);
+    color: var(--light-primary-color);
     border-radius: 2px;
     border: none;
     gap: 10px;
+    padding: 8px 12px 8px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;  
 }
 
+/* CSS PER SECTION */
+
+/* NAVBAR */
+.nav-link {
+    margin-right: 9px;
+}
+
+.btn-register {
+    width: 81px;
+    height: 36px;
+}
+
+/* MAIN MENU */
+.main-menu-adjust {
+    position: relative;
+    height: 404px;
+    align-items: center;
+}
+
+.btn-rent {
+    width: 140px;
+    height: 36px;
+}
+
+.img-car {
+    max-width: 100%;
+    height: auto;
+}
+
+/* OUR SERVICE */
+.img-girl {
+    max-width: 100%;
+    height: auto;
+}
+
+.our-service-list ul li {
+    gap: 16px;
+    display: flex;
+}
+
+/* WHY US */
+section .why-us-box {
+    margin-top: 40px;
+}
+
+section .card {
+    border-radius: 8px;
+}
+
+.why-us-card {
+    min-width: 268px;
+    min-height: 196px;
+}
+
+/* TESTIMONIAL */
 section .carousel-control-prev-icon {
     background-image: url(public/assets/left_button.svg);
     width: 56.77px;
@@ -74,122 +164,17 @@ section .carousel-control-next-icon {
     height: 68px;
 }
 
-.main-bg {
-    background-color: #F1F3FF;
-}
-
-.h1-header-black {
-    color: #000000;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    text-decoration: none;
-    margin-bottom: 16px;
-}
-
-.h1-header-white {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    text-decoration: none;
-}
-
-.h2-header {
-    color: #000000;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    text-decoration: none;
-    margin-bottom: 24px;
-}
-
-.why-us-header {
-    color: #000000;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    text-decoration: none;
-    margin-bottom: 16px;
-}
-
-.navigation-text {
-    color: #000000;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.content-text-black {
-    color: #000000;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-    margin-bottom: 16px;
-}
-
-.content-text-white {
-    color: #FFFFFF;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.card-title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.car-img {
-    width: 100%;
-    height: 100%;
-}
-
-.img-sett {
-    max-width: 100%;
-    height: auto;
-}
-
-.service-detail {
-    padding-top: 2rem;
-    padding-left: 1rem;
-}
-
-.service-list ul li {
-    gap: 16px;
-    display: flex;
-}
-
-.why-us-card {
-    max-width: 268px;
-    min-height: 196px;
-}
-
-section .why-us-box {
-    margin-top: 40px;
-}
-
-.why-us-content {
-    color: #000000;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-    width: 220px;
-    height: 60px;
-}
-
 .testimonial-content {
-    color: #000000;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
     margin-bottom: 40px;
+}
+
+.img-profile {
+    float: right;
+    padding-right: 40.38px;
+}
+
+.testimonial-name {
+    font-weight: 400px;
 }
 
 .carousel-style {
@@ -206,21 +191,61 @@ section .why-us-box {
     padding: 69px 150.41px 69px 156px;
 }
 
-.rate-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.profile-img {
-    float: right;
-    padding-right: 40.38px;
-}
-
-.get-started-bg {
-    background-color: #0D28A6;
+/* GET STARTED */
+.get-started-adjust {
+    /* max-width: 1168px;
+    max-height: 326px; */
     border-radius: 13px;
+    padding: 64px 0;
 }
 
-.accordion-item {
+.btn-rent {
+    width: 140px;
+    height: 36px;
+}
+
+/* FAQ */
+section .carousel-control-next-icon {
+    background-image: url(public/assets/right_button.svg);
+    width: 56.77px;
+    height: 68px;
+}
+
+.faq-accordion {
+    border-color: #D4D4D4;
+    border: 1px;
+    border-radius: 4px;
     margin: 16px;
+}
+
+/* FOOTER */
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 576px) {
+    .why-us-box {
+        margin-top: 20px;
+    }
+    .why-us-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-text {
+        font-size: 12px;
+    }
+    .testimonial-rate {
+        width: 80px;
+    }
+    .carousel-item {
+        padding-right: 32px;
+        padding-left: 32px;
+        text-align: center;
+        padding: 20px;
+    }
+    .img-profile {
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    .rate-wrapper {
+        margin-bottom: 10px;
+    }
 }
