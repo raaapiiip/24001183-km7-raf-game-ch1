@@ -17,9 +17,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Helvetica";
-    text-decoration: none;
+    font-family: "Arial", "Helvetica", system-ui, sans-serif;
 }
+
 img {
     max-width: 100%;
 }
@@ -94,7 +94,7 @@ li {
     padding: 8px 12px 8px 12px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 20px;  
+    line-height: 20px;
 }
 
 /* CSS PER SECTION */
@@ -110,10 +110,18 @@ li {
 }
 
 /* MAIN MENU */
+.main-menu-padding {
+    padding-top: 0px;
+}
+
 .main-menu-adjust {
     position: relative;
     height: 404px;
     align-items: center;
+}
+
+.main-menu-content {
+    padding-right: 100px;
 }
 
 .btn-rent {
@@ -147,19 +155,19 @@ section .card {
 }
 
 .why-us-card {
-    min-width: 268px;
-    min-height: 196px;
+    min-width: 268px !important;
+    height: 196px !important;
 }
 
 /* TESTIMONIAL */
 section .carousel-control-prev-icon {
-    background-image: url(public/assets/left_button.svg);
+    background-image: url(public/assets/images/left_button.svg);
     width: 56.77px;
     height: 68px;
 }
 
 section .carousel-control-next-icon {
-    background-image: url(public/assets/right_button.svg);
+    background-image: url(public/assets/images/right_button.svg);
     width: 56.77px;
     height: 68px;
 }
@@ -169,7 +177,7 @@ section .carousel-control-next-icon {
 }
 
 .img-profile {
-    float: right;
+    float: left;
     padding-right: 40.38px;
 }
 
@@ -205,47 +213,168 @@ section .carousel-control-next-icon {
 }
 
 /* FAQ */
-section .carousel-control-next-icon {
-    background-image: url(public/assets/right_button.svg);
-    width: 56.77px;
-    height: 68px;
-}
 
 .faq-accordion {
-    border-color: #D4D4D4;
-    border: 1px;
-    border-radius: 4px;
-    margin: 16px;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px !important;
+}
+
+.accordion-button.collapsed {
+    border: 1px solid #D4D4D4;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("public/assets/images/fi_chevron-down.svg") !important;
+}
+
+.accordion-button::after {
+    background-image: url("public/assets/images/fi_chevron-down.svg") !important;
 }
 
 /* FOOTER */
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 576px) {
-    .why-us-box {
-        margin-top: 20px;
+@media (max-width: 480px) {
+    /* CSS PER SECTION */
+
+    /* NAVBAR */
+    .navbar-nav {
+        flex-direction: column;
+        /* align-items: center; */
     }
-    .why-us-card {
+
+    .nav-link {
+        margin-bottom: 15px;
+        /* text-align: center; */
+    }
+
+    .btn-rent {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* MAIN MENU */
+    .main-menu-padding {
+        padding-top: 32px;
+    }
+
+    .main-menu-adjust {
+        position: relative;
+        height: auto;
+        align-items: center;
+    }
+
+    .main-menu-content {
+        padding-right: 100px;
+    }
+
+    .btn-rent {
+        width: 140px;
+        height: 36px;
+    }
+
+    .img-car {
         max-width: 100%;
-        margin-bottom: 20px;
+        height: auto;
     }
-    .testimonial-text {
-        font-size: 12px;
+
+    /* OUR SERVICE */
+    .img-girl {
+        max-width: 100%;
+        height: auto;
     }
-    .testimonial-rate {
-        width: 80px;
+
+    .our-service-list ul li {
+        gap: 16px;
+        display: flex;
     }
-    .carousel-item {
-        padding-right: 32px;
-        padding-left: 32px;
-        text-align: center;
-        padding: 20px;
+
+    /* WHY US */
+    section .why-us-box {
+        margin-top: 40px;
     }
+
+    section .card {
+        border-radius: 8px;
+    }
+
+    .why-us-card {
+        min-width: 268px !important;
+        height: 196px !important;
+    }
+
+    /* TESTIMONIAL */
+    section .carousel-control-prev-icon {
+        background-image: url(public/assets/images/left_button.svg);
+        width: 56.77px;
+        height: 68px;
+    }
+
+    section .carousel-control-next-icon {
+        background-image: url(public/assets/images/right_button.svg);
+        width: 56.77px;
+        height: 68px;
+    }
+
+    .testimonial-content {
+        margin-bottom: 40px;
+    }
+
     .img-profile {
-        max-width: 100px;
-        margin-bottom: 20px;
+        float: left;
+        padding-right: 40.38px;
     }
-    .rate-wrapper {
-        margin-bottom: 10px;
+
+    .testimonial-name {
+        font-weight: 400px;
     }
+
+    .carousel-style {
+        max-width: 832px;
+        min-height: 270px;
+        margin: 0 auto;
+        background-color: #F1F3FF;
+        border-radius: 8px;
+    }
+
+    .carousel-item {
+        max-width: 832px;
+        min-height: 270px;
+        padding: 69px 150.41px 69px 156px;
+    }
+
+    /* GET STARTED */
+    .get-started-adjust {
+        /* max-width: 1168px;
+    max-height: 326px; */
+        border-radius: 13px;
+        padding: 64px 0;
+    }
+
+    .btn-rent {
+        width: 140px;
+        height: 36px;
+    }
+
+    /* FAQ */
+
+    .faq-accordion {
+        border: 1px solid #D4D4D4;
+        border-radius: 4px !important;
+    }
+
+    .accordion-button.collapsed {
+        border: 1px solid #D4D4D4;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("public/assets/images/fi_chevron-down.svg") !important;
+    }
+
+    .accordion-button::after {
+        background-image: url("public/assets/images/fi_chevron-down.svg") !important;
+    }
+
+    /* FOOTER */
 }
