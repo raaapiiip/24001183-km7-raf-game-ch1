@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial", "Helvetica", system-ui, sans-serif;
+    font-family: "Helvetica", system-ui, sans-serif;
 }
 
 img {
@@ -181,13 +181,13 @@ section .carousel-control-next-icon {
     padding-right: 40.38px;
 }
 
-.testimonial-name {
-    font-weight: 400px;
+.testimonial-rate {
+    margin: 8px 0;
 }
 
 .carousel-style {
-    max-width: 832px;
-    min-height: 270px;
+    width: 832px;
+    height: 270px;
     margin: 0 auto;
     background-color: #F1F3FF;
     border-radius: 8px;
@@ -201,10 +201,12 @@ section .carousel-control-next-icon {
 
 /* GET STARTED */
 .get-started-adjust {
-    /* max-width: 1168px;
-    max-height: 326px; */
     border-radius: 13px;
     padding: 64px 0;
+}
+
+.get-started-button-p {
+    padding-top: 58px;
 }
 
 .btn-rent {
@@ -235,23 +237,21 @@ section .carousel-control-next-icon {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 480px) {
+
+    /* GLOBAL CSS */
+    .container {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    section {
+        padding-top: 60px;
+    }
+
     /* CSS PER SECTION */
-
     /* NAVBAR */
-    .navbar-nav {
-        flex-direction: column;
-        /* align-items: center; */
-    }
-
     .nav-link {
-        margin-bottom: 15px;
-        /* text-align: center; */
-    }
-
-    .btn-rent {
-        width: 100%;
-        height: auto;
-        padding: 10px;
+        margin: 15px 0;
     }
 
     /* MAIN MENU */
@@ -260,121 +260,94 @@ section .carousel-control-next-icon {
     }
 
     .main-menu-adjust {
-        position: relative;
-        height: auto;
-        align-items: center;
-    }
-
-    .main-menu-content {
-        padding-right: 100px;
-    }
-
-    .btn-rent {
-        width: 140px;
-        height: 36px;
-    }
-
-    .img-car {
-        max-width: 100%;
         height: auto;
     }
 
     /* OUR SERVICE */
     .img-girl {
-        max-width: 100%;
+        width: 252px;
         height: auto;
-    }
-
-    .our-service-list ul li {
-        gap: 16px;
-        display: flex;
+        margin: 0 auto;
+        display: block;
     }
 
     /* WHY US */
     section .why-us-box {
-        margin-top: 40px;
+        margin-top: 0px !important;
     }
 
-    section .card {
-        border-radius: 8px;
+    section .why-us-section {
+        padding-bottom: 16px;
     }
 
-    .why-us-card {
-        min-width: 268px !important;
-        height: 196px !important;
+    .why-us-text {
+        text-align: center;
     }
 
     /* TESTIMONIAL */
-    section .carousel-control-prev-icon {
-        background-image: url(public/assets/images/left_button.svg);
-        width: 56.77px;
-        height: 68px;
-    }
-
-    section .carousel-control-next-icon {
-        background-image: url(public/assets/images/right_button.svg);
-        width: 56.77px;
-        height: 68px;
-    }
-
     .testimonial-content {
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     .img-profile {
-        float: left;
-        padding-right: 40.38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .testimonial-name {
-        font-weight: 400px;
+    .testimonial-rate {
+        text-align: center;
+        margin: 24px 0;
     }
 
     .carousel-style {
-        max-width: 832px;
-        min-height: 270px;
-        margin: 0 auto;
-        background-color: #F1F3FF;
-        border-radius: 8px;
+        width: 328px;
+        height: 392px;
     }
 
     .carousel-item {
-        max-width: 832px;
-        min-height: 270px;
-        padding: 69px 150.41px 69px 156px;
+        padding: 40px 32px 40px 32px;
     }
+
+    .custom-prev {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-30%);
+    }
+  
+    .custom-next {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-30%);
+    }
+  
 
     /* GET STARTED */
-    .get-started-adjust {
-        /* max-width: 1168px;
-    max-height: 326px; */
-        border-radius: 13px;
-        padding: 64px 0;
+    .get-started-padding {
+        padding: 0 16px;
     }
 
-    .btn-rent {
-        width: 140px;
-        height: 36px;
+    .get-started-text-p {
+        padding: 0 58px;
+    }
+
+    .get-started-button-p {
+        padding-top: 28px !important;
     }
 
     /* FAQ */
-
-    .faq-accordion {
-        border: 1px solid #D4D4D4;
-        border-radius: 4px !important;
-    }
-
-    .accordion-button.collapsed {
-        border: 1px solid #D4D4D4;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-        background-image: url("public/assets/images/fi_chevron-down.svg") !important;
-    }
-
-    .accordion-button::after {
-        background-image: url("public/assets/images/fi_chevron-down.svg") !important;
+    .faq-text {
+        text-align: center;
     }
 
     /* FOOTER */
+    .footer-text-padding {
+        padding-right: 60px;
+    }
+
+    .footer-logo-padding {
+        padding-bottom: 60px;
+    }
 }
